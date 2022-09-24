@@ -16,7 +16,6 @@ def alternate_capitals(str)
   caps_str = str
   index = 1
   while index < caps_str.length
-    p caps_str[index]
     caps_str[index] = caps_str[index].upcase
     index += 2
   end
