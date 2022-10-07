@@ -23,12 +23,20 @@
   # Using an if statement, either enter the hash value into the empty array depending on whether it has a minimum of 1000 likes
 # Return new array (of hashes)
 
+# def popular_posts(posts)
+#   pop_posts = []
+#   i = 0
+#   while i < posts.length
+#     pop_posts << posts[i] if posts[i][:likes] >= 1000
+#     i += 1
+#   end
+#   pop_posts
+# end
+
 def popular_posts(posts)
   pop_posts = []
-  i = 0
-  while i < posts.length
-    pop_posts << posts[i] if posts[i][:likes] >= 1000
-    i += 1
+  posts.each do |post|
+    pop_posts << post if post[:likes] >= 1000
   end
   pop_posts
 end
