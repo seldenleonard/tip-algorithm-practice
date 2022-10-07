@@ -33,12 +33,18 @@
 #   pop_posts
 # end
 
+# def popular_posts(posts)
+#   pop_posts = []
+#   posts.each do |post|
+#     pop_posts << post if post[:likes] >= 1000
+#   end
+#   pop_posts
+# end
+
 def popular_posts(posts)
-  pop_posts = []
-  posts.each do |post|
-    pop_posts << post if post[:likes] >= 1000
+  posts.select do |post|
+    post if post[:likes] >= 1000
   end
-  pop_posts
 end
 
 p popular_posts([
