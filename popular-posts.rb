@@ -42,10 +42,14 @@
 #   pop_posts
 # end
 
+# def popular_posts(posts)
+#   posts.select do |post|
+#     post if post[:likes] >= 1000
+#   end
+# end
+
 def popular_posts(posts)
-  posts.select do |post|
-    post if post[:likes] >= 1000
-  end
+  posts.select{|post| post if post[:likes] >= 1000}
 end
 
 p popular_posts([
