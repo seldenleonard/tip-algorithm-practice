@@ -1,5 +1,11 @@
 class BowlingGameScorer
-  def my_test_method
-    puts "YOU MADE IT!!! (HELLO WORLD)"
+  attr_reader :pins
+
+  def initialize(pins)
+    @pins = pins
+  end
+
+  def total_score
+    pins.sum
   end
 end
