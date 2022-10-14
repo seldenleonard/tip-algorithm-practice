@@ -28,9 +28,7 @@ RSpec.describe BowlingGameScorer do
 
       scorer = BowlingGameScorer.new(pins)
 
-      if expect(scorer.total_score).to eq(78)
-        `say "CORRECT!"`
-      end
+      expect(scorer.total_score).to eq(78)
     end
 
 
