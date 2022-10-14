@@ -1,3 +1,5 @@
+# https://gist.github.com/jplong91/e21694d7f8a07c874cc3d81408c6a762
+
 class BowlingGameScorer
   attr_reader :pins
 
