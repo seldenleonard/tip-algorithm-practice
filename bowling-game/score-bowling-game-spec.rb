@@ -38,7 +38,16 @@ RSpec.describe BowlingGameScorer do
 
       scorer = BowlingGameScorer.new(pins)
 
-      if expect(scorer.total_score).to eq(97)
+      expect(scorer.total_score).to eq(97)
+    end
+
+    context "now accounting for strikes, where bowler gets credit for knocking down all pins on first try, AND gets the points of the next two turns added to the strike"
+    it "returns the score" do
+      pins = [1,5,  4,4,  8,'/',  5,3,  'X',  4,'/',  2,3,  8,'/',  7,1,  1,1]
+
+      scorer = BowlingGameScorer.new(pins)
+
+      if expect(scorer.total_score).to eq(101)
         `say "CORRECT!"`
       end
     end
