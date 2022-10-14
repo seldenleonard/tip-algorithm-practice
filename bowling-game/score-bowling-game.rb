@@ -8,6 +8,15 @@ class BowlingGameScorer
   def total_score
     i = 0
     total_to_add = 0
+    pins_all_nums = pins
+    while i < pins_all_nums.length
+      if test
+        
+      end
+      i += 1
+    end
+
+    i = 0
     while i < pins.length
       
       # GUTTER-BALL
