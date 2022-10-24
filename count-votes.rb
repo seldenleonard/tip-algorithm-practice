@@ -9,3 +9,10 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
+# STEPS
+# Define a method that accepts an array
+# Create an empty hash
+# Loop through the array
+  # For every instance of a new array value, create that value as a key in the hash, and set the key's value equal to one
+  # If an array value has already been created in the hash, increase the key's value by one
+# Return hash
