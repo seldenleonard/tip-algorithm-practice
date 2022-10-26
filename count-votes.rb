@@ -15,4 +15,6 @@
 # Loop through the array
   # For every instance of a new array value, create that value as a key in the hash, and set the key's value equal to one
   # If an array value has already been created in the hash, increase the key's value by one
+  # THOUGH NOT SPECIFIED IN INSTRUCTIONS: If i want to add another layer, I can also order the hash to return the key-value pairings with ordered by the highest values
 # Return hash
+
