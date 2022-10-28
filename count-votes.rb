@@ -20,5 +20,8 @@
 
 def count_votes(strings_array)
     count = {}
-    
+    i = 0
+    while i < strings_array.length
+      
+    end
 end
