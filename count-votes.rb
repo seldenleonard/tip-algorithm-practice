@@ -18,6 +18,7 @@
   # THOUGH NOT SPECIFIED IN INSTRUCTIONS: If i want to add another layer, I can also order the hash to return the key-value pairings with ordered by the highest values
 # Return hash
 
+
 def count_votes(strings_array)
     count = {}
     i = 0
