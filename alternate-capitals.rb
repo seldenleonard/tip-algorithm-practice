@@ -9,7 +9,7 @@
 # Set an index = 0
 # Using a while loop
   # iterate the index by values of 2 until it is either equal to or greater than the length of the input string
-  # using .upcase! capitlize letters at each index in the string
+  # using .upcase! capitalize letters at each index in the string
 # Return new string
 
 def alternate_capitals(str)
