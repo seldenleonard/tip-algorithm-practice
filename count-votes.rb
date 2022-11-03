@@ -23,6 +23,9 @@ def count_votes(strings_array)
     count = {}
     i = 0
     while i < strings_array.length
-      
+      # if strings_array[0]
+      strings_array.map { |string| strings_array.each}
+      i += 1
     end
+    
 end
