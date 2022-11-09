@@ -24,7 +24,7 @@
   # Using an if statement, either enter the hash value into the empty array depending on whether it has a minimum of 1000 likes
 # Return new array (of hashes)
 
-# SOLUTION 1 - While Loop
+# SOLUTION 1 - Correct - Using While Loop
 # def popular_posts(posts)
 #   pop_posts = []
 #   i = 0
@@ -35,7 +35,7 @@
 #   pop_posts
 # end
 
-# SOLUTION 2 - Each Loop
+# SOLUTION 2 - Correct - Using Each Loop
 # def popular_posts(posts)
 #   pop_posts = []
 #   posts.each do |post|
@@ -44,14 +44,14 @@
 #   pop_posts
 # end
 
-# SOLUTION 3 - Select Function
+# SOLUTION 3 - Correct - Using Select Function
 # def popular_posts(posts)
 #   posts.select do |post|
 #     post if post[:likes] >= 1000
 #   end
 # end
 
-# SOLUTION 4 - Select Function Single Line
+# SOLUTION 4 - Correct - Using Select Function Single Line
 def popular_posts(posts)
   posts.select{|post| post if post[:likes] >= 1000}
 end
