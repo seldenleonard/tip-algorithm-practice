@@ -17,7 +17,7 @@
 def array_max(nums)
   greatest_value = nums[0]
   i = 1
-  while nums.length < i
+  while nums.length > i
     if nums[i] > greatest_value
       greatest_value = nums[i]
     end
@@ -25,3 +25,5 @@ def array_max(nums)
   end
   greatest_value
 end
+
+p array_max([5, 17, -4, 20, 12])
