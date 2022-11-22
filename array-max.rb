@@ -13,3 +13,15 @@
   # Compare the array[index] with greatest_value variable and if array[index] is greater than greatest_value variable, set greatest_value = array[index]
   # Increase index by 1
 # Return greatest_value
+
+def array_max(nums)
+  greatest_value = nums[0]
+  i = 1
+  while nums.length < i
+    if nums[i] > greatest_value
+      greatest_value = nums[i]
+    end
+    i += 1
+  end
+  greatest_value
+end
