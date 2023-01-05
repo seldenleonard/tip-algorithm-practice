@@ -1,4 +1,4 @@
-# This is a demo task.
+# INSTRUCTIONS
 
 # Write a function:
 
@@ -14,3 +14,9 @@
   # N is an integer within the range [1..100,000];
   # each element of array A is an integer within the range [−1,000,000..1,000,000].
 
+# STEPS
+# Define a method that accepts an array
+# Define a variable called 'counter' and set it equal to 1
+# Loop until 'counter' is not equitable to a value in the array
+  # Increase counter by 1
+# Return counter
