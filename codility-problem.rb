@@ -20,3 +20,13 @@
 # Loop until 'counter' is not equitable to a value in the array
   # Increase counter by 1
 # Return counter
+
+def solution(a)
+  counter = 1
+  while a.include? counter
+    counter += 1
+  end
+  counter
+end
+
+p solution([1, 3, 6, 4, 1, 2])
