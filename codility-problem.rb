@@ -21,12 +21,18 @@
   # Increase counter by 1
 # Return counter
 
+# SOLUTION 1 - Passed all Example Test Cases and Correctness Test Cases, but passed only 1/4 Performance Test Cases
 def solution(a)
   counter = 1
   while a.include? counter
     counter += 1
   end
   counter
+end
+
+# SOLUTION 2 - Need to make the algorithm faster
+def solution(a)
+  
 end
 
 p solution([1, 3, 6, 4, 1, 2])
