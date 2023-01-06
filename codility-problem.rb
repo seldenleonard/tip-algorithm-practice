@@ -22,13 +22,13 @@
 # Return counter
 
 # SOLUTION 1 - Passed all Example Test Cases and Correctness Test Cases, but passed only 1/4 Performance Test Cases
-def solution(a)
-  counter = 1
-  while a.include? counter
-    counter += 1
-  end
-  counter
-end
+# def solution(a)
+#   counter = 1
+#   while a.include? counter
+#     counter += 1
+#   end
+#   counter
+# end
 
 # STEPS TO MAKE ALGORITHM MORE EFFICIENT
 # Replace 'counter' variable with and index variable, and set it equal to 0
@@ -40,7 +40,14 @@ end
 
 # SOLUTION 2 - Need to make the algorithm faster
 def solution(a)
-
+  i = 0
+  a.sort
+  until a[i] != i + 1
+    i += 1
+  end
+  i
 end
+
+# Edgecase: THIS actually doesnt work when an integer repeats in the array. For example, in the array below, 1 occurs twice, thus causing the "a[i] != i + 1" to give me an incorrect answer
 
 p solution([1, 3, 6, 4, 1, 2])
