@@ -30,9 +30,17 @@ def solution(a)
   counter
 end
 
+# STEPS TO MAKE ALGORITHM MORE EFFICIENT
+# Replace 'counter' variable with and index variable, and still set it equal to 1
+# Sort array from smallest to largest
+# Remove all values less than 1 from the array
+# Until a[i] != i
+  # i += 1
+# Return i
+
 # SOLUTION 2 - Need to make the algorithm faster
 def solution(a)
-  
+
 end
 
 p solution([1, 3, 6, 4, 1, 2])
